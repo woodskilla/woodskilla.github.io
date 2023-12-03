@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Портфолио</title>
+</head>
+
+<body>
+  <header class="content">
+    <nav>
+      <ul class="nav_list">
+        <li><a href="#desc">Обо мне</a></li>
+        <li><a href="#examples">Примеры работ</a></li>
+        <li><a href="#order_desc">Сделать заказ</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="content clearfix">
+    <section class="description" id="desc">
+      <h1 id="main_h1">Кто я?</h1>
+      <p>Описание себя</p>
+      <img id="self" src="img/moy_foto.jpg" alt="Мое фото">
+      <!---Заголовок, описание, картинка--->
+    </section>
+
+    <section class="cards" id="examples">
+      <!---примеры работ--->
+      <h2>Примеры работ</h2>
+      <img src="img/photo1.png" alt="Описание 1">
+      <img src="img/photo6.png" alt="Описание 2">
+      <img src="img/photo3.png" alt="Описание 3">
+      <img src="img/photo4.png" alt="Описание 4">
+      <img src="img/photo5.png" alt="Описание 5">
+    </section>
+
+    <section class="post" id="order_desc">
+      <!---Заголовок, список вопросов--->
+      <h2>Форма онлайн заявки</h2>
+      <p>В поле ваше сообщение введите ответы на вопросы. Они нужны для подготовки к обсуждению заказа.</p>
+      <ol>
+        <li>Какая цель создания сайта?</li>
+        <li>Каких измеряемых показателей вы хотите достичь с помощью сайта?</li>
+        <li>Кто целевая аудитория?</li>
+        <li>Кто ваши основные конкуренты?</li>
+        <li>В чем ваше конкурентное преимущество?</li>
+      </ol>
+      <!---Таблица--->
+
+      <table>
+        <thead>
+          <th scope="col">Услуга</th>
+          <th scope="col">Время</th>
+          <th scope="col">Сложность</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Сайт визитка</td>
+            <td>4 часа</td>
+            <td>Легкая</td>
+          </tr>
+          <tr>
+            <td>Личный блог</td>
+            <td>4 часа</td>
+            <td>Легкая</td>
+          </tr>
+          <tr>
+            <td>Разработка Landing page</td>
+            <td>от 6 часов</td>
+            <td>Средняя+</td>
+          </tr>
+          <tr>
+            <td>Верстка HTML</td>
+            <td>от 2 часов</td>
+            <td>Легкая+</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="3">Точные время и сложность обсуждаются на встрече</td>
+          </tr>
+        </tfoot>
+      </table>
+    </section>
+
+    <section id="inline">
+      <!---Форма, ФИО, телефон, почта, тип работы, ответы на вопросы--->
+      <h2>Онлайн заявка</h2>
+      <form id="contact" name="contact" action="0" method="POST">
+        <input type="name" id="name" name="name" class="txt" placeholder="Имя">
+        <input type="phone" id="phone" name="phone" class="txt" placeholder="Телефон">
+        <input type="email" id="email" name="email" class="txt" placeholder="E-mail">
+        <fieldset class="txtarea">
+          <input type="checkbox" id="option1" name="option1" value="Card">
+          <label for="option1">Сайт-визитка, личный блог</label><br>
+
+          <input type="checkbox" id="option2" name="option2" value="Landing">
+          <label for="option1">Разработка Landing page</label><br>
+
+          <input type="checkbox" id="option3" name="option3" value="HTML">
+          <label for="option1">Верстка HTML</label>
+        </fieldset>
+        <textarea id="msg" name="msg" class="txtarea" placeholder="Описание заказа:"></textarea>
+        <button id="send" type="submit">Отправить</button>
+    </section>
+  </main>
+
+  <footer class="content">
+    <p class="footer_text">&#169; 2023 made by IT-proger</p>
+  </footer>
+
+
+
+</body>
+
+</html>
